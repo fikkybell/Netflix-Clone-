@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* Header Section Starts */
+.showcase {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(/images/background.jpg) no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 120px 100px 250px black, inset -120px -100px 250px black;
+}
+
+/* Navbar */
+.showcase-nav {
+    position: relative;
+    z-index: 2;
+    padding: 26px 0 0 55px;
+}
+
+.showcase-nav #logo {
+    height: 35px;
+}
+
+.showcase-nav .submit {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 3px;
+    float: right;
+    position: relative;
+    right: 55px;
+}
+
+.showcase-nav select {
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 8px;
+    float: right;
+    position: relative;
+    right: 85px
+}
+
+.showcase-nav select option {
+    color: black;
+}
+
+/* Get Started Container */
+.showcase .get-started-container {
+    z-index: 2;
+    position: relative;
+    top: 180px;
+    width: 100%;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+.showcase .get-started-container h1,p {
+    color: white;
+}
+
+.showcase .get-started-container h1 {
+    font-size: 3.9rem;
+}
+
+.showcase .get-started-container para-1 {
+    font-size: 1.7rem;
+}
+
+.showcase .get-started-container para-2 {
+    font-size: 1.2rem;
+}
+
+.showcase .get-started-container input {
+    width: 35%;
+    padding: 22px;
+    border: none;
+    margin-top: 0.5%;
+    outline: none;
+}
+
+.showcase .get-started-container button {
+    padding: 22px;
+    border: none;
+    margin-top: 0.5%;
+    outline: none;
+    background-color: rgb(245, 17, 17);
+    color: white;
+    margin-left: -0.3%;
+    font-weight: bold;
+}
+
+/* Main Section Starts * /
+    /* Emjoy on your TV */
+    .main-section .section-container {
+        border-top: 8px solid #222;
+        background-color: black;
+        display: flex;
+        padding: 0 80px;
+        padding-bottom: 50px;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .main-section .section-container .left-column {
+        padding-top: 13%;
+        padding-right: 2%;
+    }
+    .main-section .section-container .left-column h1 {
+        color: white;
+        font-weight: bold;
+    }
+    .main-section .section-container .left-column h3 {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: normal;
+        margin-top: 5%;
+    }
+    .main-section .section-container .right-column {
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 500px;
+    }
+    .main-section .section-container .right-column img {
+        position: absolute;
+        width: 100%;
+    }
+    .main-section .section-container .right-column .video-1 {
+        margin-left: 13%;
+        margin-top: 16%;
+        width: 73%
+    }
+
+    /* Download Your Show to Watch it Offline */
+    .main-section .section2-container {
+        border-top: 8px solid #222;
+        background-color: black;
+        display: flex;
+        padding: 0 80px;
+        padding-bottom: 90px;
+        font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .main-section .section2-container .left-column img {
+        width: 100%;
+    }
+    .main-section .section2-container .left-column .box {
+        border: 2px solid rgba(255,255,255,0.25);
+        background-color: black;
+        border-radius: 10px;
+        width: 60%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        margin-top : -22%;
+    }
+    .main-section .section2-container .left-column .box .boxshot {
+        width: 15%;
+    }
+    .main-section .section2-container .left-column .box p{
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .main-section .section2-container .left-column .box p a {
+        text-decoration: none;
+    }
+    .main-section .section2-container .left-column .box .download-gif {
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        right: 0;
+    }
+    .main-section .section2-container .right-column {
+        padding-top: 13%;
+        padding-right: 2%;
+        width: 50%;
+    }
+    .main-section .section2-container .right-column h1 {
+        color: white;
+    }
+    .main-section .section2-container .right-column h3 {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    /* Watch Everywhere Section */
+    .main-section .section-container .right-column .video-2 {
+        margin-left: 19%;
+        margin-top: 8%;
+        width: 61%;
+    }
+    /* Create Profile for Kids */
+    .main-section .section2-container .left-column img {
+        width: 100%;
+    }
+
+/* Question Section Starts */
+.question-container {
+    background-color: black;
+    border-top: 8px solid #222;
+    padding-top: 60px;
+    position: relative;
+}
+.question-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+.question-container h6 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    padding-bottom: 20px;
+}
+.question-container button {
+    border: none;
+    background-color: #303030;
+    color: white;
+    width: 60%;
+    padding: 16px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+.question-container button:focus {
+     outline: none;
+     border-bottom: 1px black solid;
+}
+.question-container button img {
+    width: 3%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 20px;
+}
+.question-container .answer1, .answer2, .answer3, .answer4, .answer5, .answer6 {
+    background-color: #303030;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+    display: none;
+}
+
+/* Email address starts */
+.email-address-container {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 4%;
+    padding: 4% 0;
+    background-color: black;
+}
+.email-address-container input {
+    width: 35%;
+    padding: 22px;
+    border: none;
+    margin-top: 0.5%;
+    outline: none;
+}
+.email-address-container button {
+    padding: 22px;
+    border: none;
+    background-color: rgb(245, 17, 17);
+    color: white;
+    margin-left: -0.3%;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    border-top: 8px solid #222;
+    padding-top: 5%;
+}
+footer h6 {
+    color: grey;
+    margin: 0 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    padding-left: 192px;
+}
+footer .content {
+    max-width: 1350px;
+    margin: 0 90px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .content .box {
+    width: 20%;
+    transition: all 0.4s ease;
+}
+footer .content p {
+    text-align: center;
+}
+footer .content .middle {
+    padding-left: 60px;
+}
+footer .content .middle a {
+    line-height: 32px;
+    color: grey;
+    text-decoration: none;
+}
+footer .content .middle a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive CSS Code */
+@media (max-width: 1100px) {
+    footer .content .middle {
+        padding-left: 50px;
+    }
+}
+@media(max-width: 943px) {
+    /* Get Started */
+    .showcase .get-started-container {
+        position: relative;
+        top: 90px;
+    }
+    .showcase .get-started-container h1 {
+        font-size: 3.4rem;
+    }
+    .showcase .get-started-container .para-1 {
+        font-size: 1.5rem;
+    }
+    .showcase .get-started-container .para-2 {
+        font-size: 1rem;
+    }
+    .showcase .get-started-container input {
+        padding: 17px;
+        width: 55%;
+    }
+    .showcase .get-started-container button {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 1.5%;
+        padding: 12px;
+    }
+
+    /* Emjoy on your TV */
+    .main-section .section-container {
+        display: block;
+    }
+    .main-section .section-container .left-column {
+        width: 100%;
+        text-align: center;
+    }
+    .main-section .section-container .right-column {
+        width: 100%;;
+    }
+
+    /* Download Your Show to Watch Offline */
+    .main-section .section2-container {
+        display: block;
+    }
+    .main-section .section2-container .left-column {
+        width: 100%;
+    }
+    .main-section .section2-container .right-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer Section */
+    footer .content .box, h6 {
+        width: 50%;
+    }
+}
+
+@media(max-width: 774px) {
+    /* Emjoy on Your TV */
+    .main-section .section-container {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 659px) {
+    /* Navbar */
+    .showcase-nav{
+        padding: 26px 0px 0px 25px;
+    }
+    .showcase-nav #logo {
+        height: 25px;
+    }
+    .showcase-nav .submit {
+        position: relative;
+        right: 25px;
+        padding: 2px 10px;
+    }
+    .showcase-nav select {
+        position: relative;
+        right: 40px;
+        padding: 2px 10px;
+    }
+
+    /* Get Started */
+    .showcase .get-started-container{
+        position: relative;
+        top: 60px;
+    }
+    .showcase .get-started-container h1 {
+        font-size: 2rem;
+        padding: 50px;
+        padding-bottom: 0;
+    }
+    .showcase .get-started-container para-1 {
+        font-size: 1.5rem;
+    }
+    .showcase .get-started-container para-2 {
+        font-size: 1rem;
+    }
+    .showcase .get-started-container input {
+        padding: 14px;
+        width: 70%;
+    }
+
+    /* Question Section Starts */
+    .question-container {
+        width: 100%;
+    }
+    /* Email Address */
+    .email-address-container input {
+        padding: 17px;
+        width: 55%;
+    }
+    .email-address-container button {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 1.5%;
+    }
+    footer .content .middle, h6 {
+        padding-left: 70px;
+    }
+}
+
+@media(max-width: 500px) {
+    /* Emjoy on Your TV */
+    .main-section .section-container .right-column {
+        height: 270px;
+    }
+    
+    /* Download Your Show to Watch Offline */
+    .main-section .section2-container .left-column .box {
+        width: 100%;
+    }
+
+    /* Footer Section */
+    footer {
+        position: relative;
+    }
+    footer .content .box, h6 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    footer .content .middle {
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 346px) {
+    /* Navbar */
+    .showcase-nav #logo {
+        height: 22px;
+    }
+    .showcase-nav .submit {
+        padding: 1px 5px;
+    }
+    .showcase-nav select {
+        position: relative;
+        right: 30px;
+        padding: 1px 0;
+    }
+    .showcase .get-started-container h1{
+        font-size: 1.5rem;
+    }
+    .showcase .get-started-container .para-1 {
+        font-size: 1.1rem;
+    }
+    .showcase .get-started-container .para-2 {
+        font-size: 0.8rem;
+    }
+
+    /* Footer Section */
+    footer h6 {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    footer .content .middle {
+        padding-left: 0;
+    }
+}
